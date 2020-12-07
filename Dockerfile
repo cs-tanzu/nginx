@@ -8,6 +8,5 @@
 FROM centos:latest
 # Install Nginx.
 RUN yum update -y && yum install nginx -y
-CMD ["nginx"]
 EXPOSE 80
 EXPOSE 3000
