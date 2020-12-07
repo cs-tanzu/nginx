@@ -5,25 +5,9 @@
 #
 
 # Pull base image.
-FROM ubuntu
-
+FROM centos:latest
 # Install Nginx.
-RUN \
-  
-  apt-get update && \
-  apt-get install -y nginx 
-  
-  
-  
-
-# Define mountable directories.
-
-# Define working directory.
-
-
-# Define default command.
+RUN sudo yum update -y && sudo yum install nginx -y
 CMD ["nginx"]
-
-# Expose ports.
 EXPOSE 80
 EXPOSE 3000
