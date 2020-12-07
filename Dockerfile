@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu
 
 # Install Nginx.
 RUN \
@@ -27,4 +27,4 @@ CMD ["nginx"]
 
 # Expose ports.
 EXPOSE 80
-EXPOSE 443
+EXPOSE 3000
