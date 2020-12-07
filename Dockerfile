@@ -7,6 +7,6 @@
 # Pull base image.
 FROM centos:latest
 # Install Nginx.
-RUN yum clean packages && yum update -y && yum install nginx -y
+RUN yum update -y && yum install nginx -y && yum clean packages
 EXPOSE 80
 EXPOSE 3000
