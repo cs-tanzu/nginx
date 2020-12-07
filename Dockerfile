@@ -11,16 +11,15 @@ FROM ubuntu
 RUN \
   
   apt-get update && \
-  apt-get install -y nginx && \
+  apt-get install -y nginx 
   
-  echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
+  
   
 
 # Define mountable directories.
-VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 
 # Define working directory.
-WORKDIR /etc/nginx
+
 
 # Define default command.
 CMD ["nginx"]
